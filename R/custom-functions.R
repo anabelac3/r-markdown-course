@@ -1,4 +1,4 @@
-# Read in data ------------------------------------------------------------
+# Read in data ----
 read_data_excel <- function(rel_directory, pattern) {
     files <- dir(paste0(dirname(getwd()),"/", rel_directory), pattern = pattern, full.names = FALSE)
     df_list <- vector("list", length(files))
